@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.todo-list,
+.todo-picker-container {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.todo-picker-container input {
+  height: 40px;
+  width: 350px;
+  border-radius: 50px;
+  box-shadow: none;
+  text-align: center;
+  border: 2px solid deepskyblue;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.todo-picker-container input:focus {
+  outline: none;
+}
+
+.add-item-form button:focus,
+.add-item-form button:hover,
+.todo-picker-container button:focus,
+.todo-picker-container button:hover {
+  outline: none;
+}
+
+.add-item-form button,
+.todo-picker-container button {
+  text-align: center;
+  color: #000;
+  padding: 8px 12px;
+  background: #fff;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.add-item-form button:hover,
+.todo-picker-container button:hover {
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+.items-list {
+  list-style: none;
+}
+
+.items-list li {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid deepskyblue;
+  text-align: left;
+}
+
+.items-list .item-priority,
+.items-list .item-text {
+  font-weight: bold;
+}
+
+.items-list .item-text {
+  margin-left: 25px;
+}
+
+.items-list button {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.items-list button:focus {
+  outline: none;
+}
+
+.items-list button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-item-form input {
+  font-size: 18px;
+  width: 400px;
+  text-align: center;
+  min-height: 50px;
+}
+
+.add-item-form input:focus {
+  outline: none;
+}
+
+.add-item-form select {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.add-item-form select:focus {
+  outline: none;
+}
+
+.add-item-form button {
+  margin-top: 25px;
+}
+
+.logout-button {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logged-out button {
+  text-align: center;
+  color: #fff;
+  padding: 8px 12px;
+  background: #4267b2;
+  font-size: 18px;
+  border: none;
+}
